@@ -1,0 +1,250 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "continuousDates": false,
+    "dashboardid": "63e31ac4cad8850035b9d556",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aRealestateIAAaTax",
+        "fullname": "LocalHost/Realestate Tax",
+        "id": "aLOCALHOST_aREALESTATEIAAaTAX",
+        "title": "Realestate Tax"
+    },
+    "desc": null,
+    "hasExcessiveSeries": false,
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": true,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/y HH:mm",
+                                "days": "shortDate",
+                                "isdefault": true,
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            },
+                            "members": {
+                                "2018": {
+                                    "cachedColor": "#1ae7ff",
+                                    "color": "#1ae7ff",
+                                    "colorIndex": 0,
+                                    "colored": true,
+                                    "inResultSetLength": 4,
+                                    "sortData": "2018-01-01T00:00:00",
+                                    "title": "2018",
+                                    "total": 66.75999999999999
+                                },
+                                "2019": {
+                                    "cachedColor": "#0090a1",
+                                    "color": "#0090a1",
+                                    "colorIndex": 0,
+                                    "colored": true,
+                                    "inResultSetLength": 3,
+                                    "inResultset": true,
+                                    "sortData": "2019-01-01T00:00:00",
+                                    "title": "2019",
+                                    "total": 17772.95999999717
+                                },
+                                "2020": {
+                                    "cachedColor": "#11cae0",
+                                    "color": "#ffab03",
+                                    "colorIndex": 0,
+                                    "colored": true,
+                                    "inResultSetLength": 3,
+                                    "inResultset": true,
+                                    "sortData": "2020-01-01T00:00:00",
+                                    "title": "2020",
+                                    "total": 9178.610000000335
+                                },
+                                "2021": {
+                                    "cachedColor": "#1ae7ff",
+                                    "color": "#1ae7ff",
+                                    "colorIndex": 0,
+                                    "colored": true,
+                                    "inResultSetLength": 3,
+                                    "inResultset": true,
+                                    "sortData": "2021-01-01T00:00:00",
+                                    "title": "2021",
+                                    "total": 717.2400000002235
+                                }
+                            }
+                        },
+                        "hierarchies": [
+                            "calendar",
+                            "calendar - weeks"
+                        ],
+                        "instanceid": "2B271-E669-35",
+                        "jaql": {
+                            "column": "Due Date",
+                            "datatype": "datetime",
+                            "dim": "[HotelTax.Due Date (Calendar)]",
+                            "level": "years",
+                            "merged": true,
+                            "table": "HotelTax",
+                            "title": "Years in Due Date"
+                        }
+                    }
+                ],
+                "name": "categories"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "color_bkp": {
+                                "color": "#00cee6",
+                                "type": "color"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "currency": {
+                                    "position": "pre",
+                                    "symbol": "$"
+                                },
+                                "decimals": "auto"
+                            }
+                        },
+                        "instanceid": "ECEFE-5CF7-FB",
+                        "jaql": {
+                            "context": {
+                                "[73E2F-B4D]": {
+                                    "agg": "sum",
+                                    "column": "Total Amount Due",
+                                    "datatype": "numeric",
+                                    "dim": "[HotelTax.Total Amount Due]",
+                                    "table": "HotelTax",
+                                    "title": "Total Total Amount Due"
+                                },
+                                "[C62B8-A45]": {
+                                    "agg": "sum",
+                                    "column": "Tax Due",
+                                    "datatype": "numeric",
+                                    "dim": "[HotelTax.Tax Due]",
+                                    "table": "HotelTax",
+                                    "title": "Total Tax Due"
+                                }
+                            },
+                            "formula": "[73E2F-B4D]-[C62B8-A45]",
+                            "title": "Missing Revenue",
+                            "type": "measure"
+                        }
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/y HH:mm",
+                                "days": "shortDate",
+                                "isdefault": true,
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            }
+                        },
+                        "instanceid": "2C069-0C41-8B",
+                        "jaql": {
+                            "collapsed": true,
+                            "column": "Due Date",
+                            "datasource": {
+                                "address": "LocalHost",
+                                "database": "aRealestateIAAaTax",
+                                "fullname": "LocalHost/Realestate Tax",
+                                "id": "aLOCALHOST_aREALESTATEIAAaTAX",
+                                "title": "Realestate Tax"
+                            },
+                            "datatype": "datetime",
+                            "dim": "[HotelTax.Due Date (Calendar)]",
+                            "filter": {
+                                "exclude": {
+                                    "members": [
+                                        "2018-01-01T00:00:00"
+                                    ]
+                                },
+                                "explicit": false,
+                                "multiSelection": true
+                            },
+                            "level": "years",
+                            "merged": true,
+                            "table": "HotelTax",
+                            "title": "Years in Due Date"
+                        }
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "nullAsZero": false,
+    "oid": "63e31ac4cad8850035b9d55b",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "selector": false,
+        "supportsHierarchies": false,
+        "triggersDomready": true
+    },
+    "prevSortObjects": [
+    ],
+    "realTimeRefreshing": false,
+    "script": "./script.js",
+    "style": {
+        "center/contribution": true,
+        "center/contributionToParent": true,
+        "center/value": true,
+        "legend/enabled": false,
+        "legend/position": "bottom",
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "years_in_due_date",
+                    "plural": "Years in Due Date",
+                    "singular": "Years in Due Date",
+                    "title": "Years in Due Date"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "paletteName": "Vivid",
+        "tooltip/contribution": false,
+        "tooltip/value": true
+    },
+    "subtype": "sunburst",
+    "tickLevel": "year",
+    "title": "",
+    "type": "sunburst"
+}

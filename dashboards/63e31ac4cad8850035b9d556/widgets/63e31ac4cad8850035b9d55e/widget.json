@@ -1,0 +1,414 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "continuousDates": false,
+    "dashboardid": "63e31ac4cad8850035b9d556",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aRealestateIAAaTax",
+        "fullname": "LocalHost/Realestate Tax",
+        "id": "aLOCALHOST_aREALESTATEIAAaTAX",
+        "title": "Realestate Tax"
+    },
+    "desc": null,
+    "drillToDashboardConfig": {
+        "dashboardIds": [
+        ],
+        "displayDashboardsPane": true,
+        "displayFilterPane": true,
+        "displayHeaderRow": true,
+        "displayToolbarRow": true,
+        "drillToDashboardByName": false,
+        "drillToDashboardMenuCaption": "Jump to dashboard",
+        "drillToDashboardNavigateType": 4,
+        "drillToDashboardNavigateTypeCharts": 1,
+        "drillToDashboardNavigateTypeOthers": 3,
+        "drillToDashboardNavigateTypePivot": 2,
+        "drillToDashboardRightMenuCaption": "Jump to ",
+        "drilledDashboardDisplayType": 2,
+        "drilledDashboardPrefix": "_drill",
+        "drilledDashboardsFolderPrefix": "",
+        "excludeFilterDims": [
+        ],
+        "forceZeroInsteadNull": false,
+        "hideDrilledDashboards": true,
+        "hideSharedDashboardsForNonOwner": true,
+        "includeFilterDims": [
+        ],
+        "mergeTargetDashboardFilters": false,
+        "modalWindowResize": false,
+        "resetDashFiltersAfterJTD": false,
+        "sameCubeRestriction": true,
+        "sendPieChartMeasureFiltersOnClick": true,
+        "showFolderNameOnMenuSelection": false,
+        "showJTDIcon": true,
+        "volatile": false
+    },
+    "drilledDashboardDisplay": {
+    },
+    "element": {
+    },
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "PanelName": "Year",
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/y HH:mm",
+                                "days": "shortDate",
+                                "isdefault": true,
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            }
+                        },
+                        "hierarchies": [
+                            "calendar",
+                            "calendar - weeks"
+                        ],
+                        "instanceid": "6E51F-D6C5-76",
+                        "jaql": {
+                            "column": "Due Date",
+                            "datatype": "datetime",
+                            "dim": "[HotelTax.Due Date (Calendar)]",
+                            "level": "years",
+                            "merged": true,
+                            "table": "HotelTax",
+                            "title": "Year"
+                        }
+                    }
+                ],
+                "name": "Items"
+            },
+            {
+                "items": [
+                ],
+                "name": "Values"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/y HH:mm",
+                                "days": "shortDate",
+                                "isdefault": true,
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            }
+                        },
+                        "instanceid": "525B3-4C61-D0",
+                        "jaql": {
+                            "collapsed": true,
+                            "column": "Due Date",
+                            "datasource": {
+                                "address": "LocalHost",
+                                "database": "aRealestateIAAaTax",
+                                "fullname": "LocalHost/Realestate Tax",
+                                "id": "aLOCALHOST_aREALESTATEIAAaTAX",
+                                "title": "Realestate Tax"
+                            },
+                            "datatype": "datetime",
+                            "dim": "[HotelTax.Due Date (Calendar)]",
+                            "filter": {
+                                "all": true,
+                                "explicit": false,
+                                "multiSelection": true
+                            },
+                            "level": "years",
+                            "merged": true,
+                            "table": "HotelTax",
+                            "title": "Year"
+                        }
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "nullAsZero": false,
+    "oid": "63e31ac4cad8850035b9d55e",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "drillTarget": "dummy",
+        "selector": true,
+        "title": false,
+        "triggersDomready": true
+    },
+    "prevSortObjects": [
+    ],
+    "questQueryResult": {
+        "isActive": false,
+        "isPending": false
+    },
+    "realTimeRefreshing": false,
+    "style": {
+        "currentCard": {
+            "actions": [
+            ],
+            "body": [
+                {
+                    "type": "Container"
+                },
+                {
+                    "columns": [
+                        {
+                            "items": [
+                                {
+                                    "size": "small",
+                                    "style": {
+                                        "backgroundColor": "white",
+                                        "color": "black",
+                                        "margin-left": "10px",
+                                        "padding-left": "10px"
+                                    },
+                                    "text": "Year",
+                                    "type": "TextBlock",
+                                    "weight": "regular",
+                                    "wrap": true
+                                }
+                            ],
+                            "type": "Column",
+                            "width": "170px"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "items": [
+                                        {
+                                            "choices": "{choices:Year}",
+                                            "class": "",
+                                            "displayType": "compact",
+                                            "id": "data.filters[0].filterJaql.members[0]",
+                                            "type": "Input.ChoiceSet",
+                                            "value": "2020"
+                                        }
+                                    ],
+                                    "spacing": "none",
+                                    "type": "Container",
+                                    "width": "150px"
+                                }
+                            ],
+                            "spacing": "none",
+                            "type": "Column",
+                            "width": "175px"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "items": [
+                                        {
+                                            "actions": [
+                                                {
+                                                    "data": {
+                                                        "filters": [
+                                                            {
+                                                                "filterJaql": {
+                                                                    "explicit": true,
+                                                                    "members": [
+                                                                        ""
+                                                                    ]
+                                                                },
+                                                                "filterName": "Year"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "title": "Apply",
+                                                    "type": "Filters"
+                                                }
+                                            ],
+                                            "margin": "0px",
+                                            "padding": "0px",
+                                            "type": "ActionSet"
+                                        }
+                                    ],
+                                    "spacing": "none",
+                                    "type": "Container",
+                                    "width": "80px"
+                                }
+                            ],
+                            "spacing": "none",
+                            "type": "Column",
+                            "width": "175px"
+                        }
+                    ],
+                    "separator": false,
+                    "spacing": "default",
+                    "type": "ColumnSet"
+                }
+            ],
+            "carouselAnimation": {
+                "showButtons": false
+            },
+            "script": "",
+            "showCarousel": true,
+            "style": {
+            },
+            "title": "",
+            "titleStyle": [
+                {
+                    "display": "none"
+                }
+            ]
+        },
+        "currentCardName": "DynamicChoice",
+        "currentConfig": {
+            "actions": {
+                "actionAlignment": "left",
+                "actionsOrientation": "horizontal",
+                "backgroundColor": "#0a8287",
+                "buttonSpacing": 20,
+                "color": "white",
+                "maxActions": 5,
+                "showCard": {
+                    "actionMode": "inline",
+                    "inlineTopMargin": 16,
+                    "style": "default"
+                },
+                "spacing": "none"
+            },
+            "containerStyles": {
+                "default": {
+                    "backgroundColor": "#FFFFFF",
+                    "foregroundColors": {
+                        "accent": {
+                            "normal": "#2E89FC"
+                        },
+                        "attention": {
+                            "normal": "#cc3300"
+                        },
+                        "black": {
+                            "normal": "#000000"
+                        },
+                        "default": {
+                            "normal": "#3a4356"
+                        },
+                        "good": {
+                            "normal": "#54a254"
+                        },
+                        "green": {
+                            "normal": "#54a254"
+                        },
+                        "grey": {
+                            "normal": "#9ea2ab"
+                        },
+                        "lightGreen": {
+                            "normal": "#3ADCCA"
+                        },
+                        "orange": {
+                            "normal": "#f2B900"
+                        },
+                        "red": {
+                            "normal": "#dd1111"
+                        },
+                        "warning": {
+                            "normal": "#e69500"
+                        },
+                        "white": {
+                            "normal": "#ffffff"
+                        },
+                        "yellow": {
+                            "normal": "#ffcb05"
+                        }
+                    }
+                }
+            },
+            "factSet": {
+                "spacing": 20,
+                "title": {
+                    "color": "default",
+                    "size": "default",
+                    "warp": true,
+                    "weight": "bold"
+                },
+                "value": {
+                    "color": "default",
+                    "size": "default",
+                    "warp": true,
+                    "weight": "default"
+                }
+            },
+            "fontFamily": "Open Sans",
+            "fontSizes": {
+                "default": 14,
+                "extraLarge": 32,
+                "large": 50,
+                "medium": 20,
+                "small": 16
+            },
+            "fontWeights": {
+                "bold": 1000,
+                "default": 500,
+                "light": 100
+            },
+            "height": 49,
+            "imageBaseUrl": "",
+            "imageSet": {
+                "imageSize": "medium",
+                "maxImageHeight": 100
+            },
+            "imageSizes": {
+                "default": 40,
+                "large": 160,
+                "medium": 80,
+                "small": 40
+            },
+            "separator": {
+                "lineColor": "#ffcb05",
+                "lineThickness": 3
+            },
+            "spacing": {
+                "default": 5,
+                "extraLarge": 40,
+                "large": 20,
+                "medium": 60,
+                "none": 0,
+                "padding": 0,
+                "small": 20
+            },
+            "supportsInteractivity": true
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "year",
+                    "plural": "Year",
+                    "singular": "Year",
+                    "title": "Year"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        }
+    },
+    "subtype": "BloX",
+    "tickLevel": "year",
+    "title": "",
+    "type": "BloX"
+}

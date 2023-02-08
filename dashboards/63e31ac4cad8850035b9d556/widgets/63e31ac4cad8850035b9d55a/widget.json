@@ -1,0 +1,88 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "63e31ac4cad8850035b9d556",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aRealestateIAAaTax",
+        "fullname": "LocalHost/Realestate Tax",
+        "id": "aLOCALHOST_aREALESTATEIAAaTAX",
+        "title": "Realestate Tax"
+    },
+    "desc": null,
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "63e31ac4cad8850035b9d55a",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "selector": false
+    },
+    "prevSortObjects": [
+    ],
+    "realTimeRefreshing": false,
+    "script": "./script.js",
+    "style": {
+        "activeTab": "0",
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "showTitle": false,
+        "width": 650
+    },
+    "subtype": "WidgetsTabber",
+    "tabs": [
+        {
+            "displayWidgetIds": [
+                ""
+            ],
+            "hideWidgetIds": [
+                ""
+            ],
+            "title": "SUMMARY"
+        },
+        {
+            "displayWidgetIds": [
+                ""
+            ],
+            "hideWidgetIds": [
+                ""
+            ],
+            "title": "PROPERTY DETAILS"
+        },
+        {
+            "displayWidgetIds": [
+                ""
+            ],
+            "hideWidgetIds": [
+                ""
+            ],
+            "title": "PROPERTY POINTS"
+        }
+    ],
+    "title": "",
+    "type": "WidgetsTabber"
+}

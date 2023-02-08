@@ -1,0 +1,60 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "63e31ac4cad8850035b9d556",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aRealestateIAAaTax",
+        "fullname": "localhost/Realestate Tax",
+        "id": "localhost_aRealestateIAAaTax",
+        "live": false,
+        "title": "Realestate Tax"
+    },
+    "desc": null,
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "63e31ac4cad8850035b9d55c",
+    "options": {
+        "dashboardFiltersMode": "filter",
+        "disableExportToCSV": true,
+        "disableExportToImage": true,
+        "disallowSelector": true,
+        "disallowWidgetTitle": true,
+        "hideFromWidgetList": true,
+        "selector": false,
+        "supportsHierarchies": false,
+        "toolbarButton": {
+            "css": "add-rich-text",
+            "tooltip": "RICHTEXT_MAIN.TOOLBAR_BUTTON"
+        },
+        "triggersDomready": true
+    },
+    "realTimeRefreshing": false,
+    "style": {
+        "content": {
+            "bgColor": "#0a8287",
+            "html": "<font size=\"5\" color=\"#ffffff\"><b>HOTEL REAL ESTATE TAX</b></font>",
+            "textAlign": "left",
+            "vAlign": "valign-middle"
+        }
+    },
+    "subtype": "richtexteditor",
+    "title": "RICHTEXT_MAIN.TITLE",
+    "type": "richtexteditor"
+}

@@ -1,0 +1,255 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "continuousDates": false,
+    "dashboardid": "63e31ac4cad8850035b9d556",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aRealestateIAAaTax",
+        "fullname": "LocalHost/Realestate Tax",
+        "id": "aLOCALHOST_aREALESTATEIAAaTAX",
+        "lastBuildTime": "2023-01-11T19:27:49.628Z",
+        "title": "Realestate Tax"
+    },
+    "desc": null,
+    "drillToDashboardConfig": {
+        "dashboardIds": [
+        ],
+        "displayDashboardsPane": true,
+        "displayFilterPane": true,
+        "displayHeaderRow": true,
+        "displayToolbarRow": true,
+        "drillToDashboardByName": false,
+        "drillToDashboardMenuCaption": "Jump to dashboard",
+        "drillToDashboardNavigateType": 3,
+        "drillToDashboardNavigateTypeCharts": 1,
+        "drillToDashboardNavigateTypeOthers": 3,
+        "drillToDashboardNavigateTypePivot": 2,
+        "drillToDashboardRightMenuCaption": "Jump to ",
+        "drilledDashboardDisplayType": 2,
+        "drilledDashboardPrefix": "_drill",
+        "drilledDashboardsFolderPrefix": "",
+        "excludeFilterDims": [
+        ],
+        "forceZeroInsteadNull": false,
+        "hideDrilledDashboards": true,
+        "hideSharedDashboardsForNonOwner": true,
+        "includeFilterDims": [
+        ],
+        "mergeTargetDashboardFilters": false,
+        "modalWindowResize": false,
+        "resetDashFiltersAfterJTD": false,
+        "sameCubeRestriction": true,
+        "sendPieChartMeasureFiltersOnClick": true,
+        "showFolderNameOnMenuSelection": false,
+        "showJTDIcon": true,
+        "volatile": false
+    },
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "format": {
+                            "color": {
+                                "color": "#003865",
+                                "type": "color"
+                            },
+                            "mask": {
+                                "decimals": 0,
+                                "percent": true
+                            }
+                        },
+                        "instanceid": "3887A-FDEF-6B",
+                        "jaql": {
+                            "context": {
+                                "[3FF50-6C4]": {
+                                    "agg": "sum",
+                                    "column": "Pending",
+                                    "datatype": "numeric",
+                                    "dim": "[HotelTax.Pending]",
+                                    "table": "HotelTax",
+                                    "title": "Total Pending"
+                                },
+                                "[A9F2C-38A]": {
+                                    "agg": "countduplicates",
+                                    "column": "Pending",
+                                    "datatype": "numeric",
+                                    "dim": "[HotelTax.Pending]",
+                                    "table": "HotelTax",
+                                    "title": "# of Pending"
+                                }
+                            },
+                            "formula": "sum([3FF50-6C4])/[A9F2C-38A]",
+                            "title": "PENDING",
+                            "type": "measure"
+                        }
+                    }
+                ],
+                "name": "value"
+            },
+            {
+                "items": [
+                ],
+                "name": "secondary"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": false,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "B8E42-826C-63",
+                        "jaql": {
+                            "formula": "0",
+                            "title": "0 (default)"
+                        }
+                    }
+                ],
+                "name": "min"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": false,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "7925B-86FA-3E",
+                        "jaql": {
+                            "context": {
+                            },
+                            "formula": "1",
+                            "title": "1",
+                            "type": "measure"
+                        }
+                    }
+                ],
+                "name": "max"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "nullAsZero": false,
+    "oid": "63e31ac4cad8850035b9d559",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "disallowSelector": true,
+        "selector": false,
+        "supportsHierarchies": false,
+        "triggersDomready": true
+    },
+    "prevSortObjects": [
+    ],
+    "realTimeRefreshing": false,
+    "script": "./script.js",
+    "style": {
+        "components": {
+            "labels": {
+                "enabled": false,
+                "inactive": false
+            },
+            "secondaryTitle": {
+                "enabled": true,
+                "inactive": true
+            },
+            "ticks": {
+                "enabled": true,
+                "inactive": false
+            },
+            "title": {
+                "enabled": true,
+                "inactive": false
+            }
+        },
+        "indicator/gauge": {
+            "components": {
+                "labels": {
+                    "enabled": true,
+                    "inactive": false
+                },
+                "secondaryTitle": {
+                    "enabled": true,
+                    "inactive": true
+                },
+                "ticks": {
+                    "enabled": true,
+                    "inactive": false
+                },
+                "title": {
+                    "enabled": true,
+                    "inactive": false
+                }
+            },
+            "skin": "1",
+            "subtype": "round"
+        },
+        "indicator/numeric": {
+            "components": {
+                "icon": {
+                    "enabled": true,
+                    "inactive": false
+                },
+                "secondaryTitle": {
+                    "enabled": true,
+                    "inactive": true
+                },
+                "title": {
+                    "enabled": true,
+                    "inactive": false
+                }
+            },
+            "skin": "vertical",
+            "subtype": "simple"
+        },
+        "narration": {
+            "labels": [
+            ]
+        },
+        "skin": "2",
+        "subtype": "round"
+    },
+    "subtype": "indicator/gauge",
+    "title": "",
+    "type": "indicator"
+}

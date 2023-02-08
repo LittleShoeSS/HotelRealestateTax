@@ -1,0 +1,52 @@
+{
+    "allowChangeSubscription": false,
+    "dataExploration": false,
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aRealestateIAAaTax",
+        "fullname": "localhost/Realestate Tax",
+        "id": "localhost_aRealestateIAAaTax",
+        "live": false,
+        "title": "Realestate Tax"
+    },
+    "desc": "",
+    "filters": "./filters.json",
+    "hierarchies": [
+    ],
+    "layout": "./layout.json",
+    "oid": "63e31ac4cad8850035b9d556",
+    "script": "./script.js",
+    "settings": {
+        "autoUpdateOnFiltersChange": true
+    },
+    "style": {
+        "name": "vivid",
+        "palette": {
+            "colors": [
+                "#00cee6",
+                "#9b9bd7",
+                "#6EDA55",
+                "#fc7570",
+                "#fbb755",
+                "#218A8C"
+            ],
+            "isSystem": true,
+            "name": "Vivid",
+            "sortOrder": 10,
+            "systemDefault": true
+        }
+    },
+    "title": "Hotel Realestate Tax Dev",
+    "widgets": [
+        "./widgets/63e31ac4cad8850035b9d557/widget.json",
+        "./widgets/63e31ac4cad8850035b9d558/widget.json",
+        "./widgets/63e31ac4cad8850035b9d559/widget.json",
+        "./widgets/63e31ac4cad8850035b9d55a/widget.json",
+        "./widgets/63e31ac4cad8850035b9d55b/widget.json",
+        "./widgets/63e31ac4cad8850035b9d55c/widget.json",
+        "./widgets/63e31ac4cad8850035b9d55d/widget.json",
+        "./widgets/63e31ac4cad8850035b9d55e/widget.json",
+        "./widgets/63e31ac4cad8850035b9d55f/widget.json",
+        "./widgets/63e31ac4cad8850035b9d560/widget.json"
+    ]
+}

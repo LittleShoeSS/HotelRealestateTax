@@ -1,0 +1,435 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "continuousDates": false,
+    "dashboardid": "63e31ac4cad8850035b9d556",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aRealestateIAAaTax",
+        "fullname": "LocalHost/Realestate Tax",
+        "id": "aLOCALHOST_aREALESTATEIAAaTAX",
+        "title": "Realestate Tax"
+    },
+    "desc": null,
+    "drillToDashboardConfig": {
+        "dashboardIds": [
+        ],
+        "displayDashboardsPane": true,
+        "displayFilterPane": true,
+        "displayHeaderRow": true,
+        "displayToolbarRow": true,
+        "drillToDashboardByName": false,
+        "drillToDashboardMenuCaption": "Jump to dashboard",
+        "drillToDashboardNavigateType": 4,
+        "drillToDashboardNavigateTypeCharts": 1,
+        "drillToDashboardNavigateTypeOthers": 3,
+        "drillToDashboardNavigateTypePivot": 2,
+        "drillToDashboardRightMenuCaption": "Jump to ",
+        "drilledDashboardDisplayType": 2,
+        "drilledDashboardPrefix": "_drill",
+        "drilledDashboardsFolderPrefix": "",
+        "excludeFilterDims": [
+        ],
+        "forceZeroInsteadNull": false,
+        "hideDrilledDashboards": true,
+        "hideSharedDashboardsForNonOwner": true,
+        "includeFilterDims": [
+        ],
+        "mergeTargetDashboardFilters": false,
+        "modalWindowResize": false,
+        "resetDashFiltersAfterJTD": false,
+        "sameCubeRestriction": true,
+        "sendPieChartMeasureFiltersOnClick": true,
+        "showFolderNameOnMenuSelection": false,
+        "showJTDIcon": true,
+        "volatile": false
+    },
+    "drilledDashboardDisplay": {
+    },
+    "element": {
+    },
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                ],
+                "name": "Items"
+            },
+            {
+                "items": [
+                    {
+                        "PanelName": "Paid",
+                        "format": {
+                            "mask": {
+                                "abbreviations": {
+                                    "b": false,
+                                    "k": false,
+                                    "m": false,
+                                    "t": false
+                                },
+                                "currency": {
+                                    "position": "pre",
+                                    "symbol": "$"
+                                },
+                                "decimals": 0
+                            }
+                        },
+                        "instanceid": "EF3DB-4F59-B6",
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "Total Amount Due",
+                            "datatype": "numeric",
+                            "dim": "[HotelTax.Total Amount Due]",
+                            "table": "HotelTax",
+                            "title": "Paid"
+                        }
+                    }
+                ],
+                "name": "Values"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "nullAsZero": false,
+    "oid": "63e31ac4cad8850035b9d560",
+    "options": {
+        "aiFeatures": [
+            {
+                "actions": {
+                },
+                "description": "Provide information about your data",
+                "id": "summary_statistics_1569425202576",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Summary Statistics",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "refer to the percentage change of a specific variable within a specific time period and given a certain context",
+                "id": "growth_rate_1572222323562",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Growth Rates",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Roughly 80% of the effects come from 20% of the causes",
+                "id": "pareto_1569481451806",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Pareto",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "perform two tailed t-test",
+                "id": "two-tailed_test_1574241584650",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Two-Tailed Test",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Grouping a set of objects in such a way that objects in the same group are more similar to each other than to those in other groups",
+                "id": "cluster_1570673124179",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Clustering",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Another way to show distributions",
+                "id": "percentile_curves_1574252861643",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Percentile Curves",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Outlier data points detections",
+                "id": "anomaly",
+                "isCustomModel": false,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Anomaly",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Predict the future values of a 2-var-TS, one of which is the target and the\n                    second is explaining variable.\n                    Provide non-symmetric confidence-interval for the above predictions.\n                    Var-Dependence (Score) - the strength of the influence of the explaining\n                    variable on the target one.\n                    XAI (model weights etc)",
+                "id": "forecast",
+                "isCustomModel": false,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "What-If Analysis",
+                "options": {
+                    "hasTargetVar": true,
+                    "targetVar": {
+                        "options": [
+                            "Paid"
+                        ],
+                        "sectionTitle": "Target Value",
+                        "targetVarPaneActive": false,
+                        "value": "Paid"
+                    }
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Locally (using before and after time series points) estimating the mean of the time series",
+                "id": "local_estimates",
+                "isCustomModel": false,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Local Estimate",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Detect (if exists) Trend-Break-Points and connect those with a trend line",
+                "id": "trend",
+                "isCustomModel": false,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Trend",
+                "options": {
+                }
+            }
+        ],
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "drillTarget": "dummy",
+        "selector": true,
+        "title": false,
+        "triggersDomready": true
+    },
+    "prevSortObjects": [
+    ],
+    "questQueryResult": {
+        "isActive": false,
+        "isPending": false
+    },
+    "realTimeRefreshing": false,
+    "style": {
+        "currentCard": {
+            "body": [
+                {
+                    "items": [
+                        {
+                            "color": "BLACK",
+                            "horizontalAlignment": "center",
+                            "size": "medium",
+                            "spacing": "large",
+                            "text": "Amount Paid",
+                            "type": "TextBlock",
+                            "weight": "light"
+                        },
+                        {
+                            "color": "black",
+                            "horizontalAlignment": "center",
+                            "separator": true,
+                            "size": "large",
+                            "spacing": "extraLarge",
+                            "style": {
+                                "align-self": "center",
+                                "font-weight": "bold"
+                            },
+                            "text": "{panel:paid}",
+                            "type": "TextBlock"
+                        },
+                        {
+                            "actions": [
+                                {
+                                    "title": "VIEW REPORT",
+                                    "type": "Action.OpenUrl",
+                                    "url": "https://www.sisense.com/sisense-labs/"
+                                }
+                            ],
+                            "type": "ActionSet"
+                        }
+                    ],
+                    "type": "Container"
+                }
+            ],
+            "script": "",
+            "showCarousel": true,
+            "style": "",
+            "title": ""
+        },
+        "currentCardName": "Indicator Center",
+        "currentConfig": {
+            "actions": {
+                "actionAlignment": "center",
+                "actionsOrientation": "horizontal",
+                "backgroundColor": "#0a8287",
+                "buttonSpacing": 20,
+                "color": "white",
+                "maxActions": 5,
+                "showCard": {
+                    "actionMode": "inline",
+                    "inlineTopMargin": 16,
+                    "style": "default"
+                },
+                "spacing": "extraLarge"
+            },
+            "containerStyles": {
+                "default": {
+                    "backgroundColor": "#ffffff",
+                    "foregroundColors": {
+                        "accent": {
+                            "normal": "#2E89FC"
+                        },
+                        "attention": {
+                            "normal": "#cc3300"
+                        },
+                        "black": {
+                            "normal": "#000000"
+                        },
+                        "default": {
+                            "normal": "#ffffff"
+                        },
+                        "good": {
+                            "normal": "#54a254"
+                        },
+                        "green": {
+                            "normal": "#54a254"
+                        },
+                        "grey": {
+                            "normal": "#dcdcdc"
+                        },
+                        "lightGreen": {
+                            "normal": "#93c0c0"
+                        },
+                        "orange": {
+                            "normal": "#f2B900"
+                        },
+                        "red": {
+                            "normal": "#dd1111"
+                        },
+                        "warning": {
+                            "normal": "#e69500"
+                        },
+                        "white": {
+                            "normal": "#ffffff"
+                        },
+                        "yellow": {
+                            "normal": "#ffcb05"
+                        }
+                    }
+                }
+            },
+            "factSet": {
+                "spacing": 20,
+                "title": {
+                    "color": "default",
+                    "size": "default",
+                    "warp": true,
+                    "weight": "bold"
+                },
+                "value": {
+                    "color": "default",
+                    "size": "default",
+                    "warp": true,
+                    "weight": "default"
+                }
+            },
+            "fontFamily": "Open Sans",
+            "fontSizes": {
+                "default": 16,
+                "extraLarge": 50,
+                "large": 32,
+                "medium": 22,
+                "small": 12
+            },
+            "fontWeights": {
+                "bold": 1000,
+                "default": 500,
+                "light": 100
+            },
+            "height": 257,
+            "imageBaseUrl": "",
+            "imageSet": {
+                "imageSize": "medium",
+                "maxImageHeight": 100
+            },
+            "imageSizes": {
+                "default": 40,
+                "large": 160,
+                "medium": 80,
+                "small": 40
+            },
+            "separator": {
+                "lineColor": "#eeeeee",
+                "lineThickness": 1
+            },
+            "spacing": {
+                "default": 5,
+                "extraLarge": 40,
+                "large": 20,
+                "medium": 10,
+                "padding": 20,
+                "small": 5
+            },
+            "supportsInteractivity": true
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        }
+    },
+    "subtype": "BloX",
+    "title": "",
+    "type": "BloX"
+}

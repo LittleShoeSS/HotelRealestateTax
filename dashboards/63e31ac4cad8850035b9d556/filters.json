@@ -1,0 +1,101 @@
+{
+    "defaultFilters": [
+        {
+            "disabled": false,
+            "instanceid": "27150-3D9C-EC",
+            "isCascading": false,
+            "jaql": {
+                "collapsed": true,
+                "datatype": "value",
+                "dim": "[HotelTaxA.Year]",
+                "filter": {
+                    "explicit": true,
+                    "members": [
+                        "2021"
+                    ],
+                    "multiSelection": false
+                },
+                "isDashboardFilter": true,
+                "title": "Year"
+            }
+        },
+        {
+            "disabled": false,
+            "instanceid": "63B55-1247-6B",
+            "isCascading": false,
+            "jaql": {
+                "collapsed": true,
+                "column": "Due Date",
+                "datasource": {
+                    "address": "LocalHost",
+                    "database": "aRealestateIAAaTax",
+                    "fullname": "localhost/Realestate Tax",
+                    "id": "localhost_aRealestateIAAaTax",
+                    "live": false,
+                    "title": "Realestate Tax"
+                },
+                "datatype": "datetime",
+                "dim": "[HotelTax.Due Date (Calendar)]",
+                "filter": {
+                    "explicit": true,
+                    "members": [
+                        "2020-01-01T00:00:00"
+                    ],
+                    "multiSelection": true
+                },
+                "isDashboardFilter": true,
+                "level": "years",
+                "table": "HotelTax",
+                "title": "Years in Due Date"
+            }
+        },
+        {
+            "instanceid": "BC1BD-5BD0-E9",
+            "isCascading": false,
+            "jaql": {
+                "collapsed": true,
+                "column": "Name",
+                "datasource": {
+                    "address": "LocalHost",
+                    "database": "aRealestateIAAaTax",
+                    "fullname": "localhost/Realestate Tax",
+                    "id": "localhost_aRealestateIAAaTax",
+                    "live": false,
+                    "title": "Realestate Tax"
+                },
+                "datatype": "text",
+                "dim": "[HotelTax.Name]",
+                "filter": {
+                    "explicit": true,
+                    "members": [
+                        "Airbnb Inc"
+                    ],
+                    "multiSelection": true
+                },
+                "isDashboardFilter": true,
+                "table": "HotelTax",
+                "title": "Name"
+            }
+        }
+    ],
+    "filters": [
+        {
+            "disabled": false,
+            "isCascading": false,
+            "jaql": {
+                "collapsed": true,
+                "datatype": "value",
+                "dim": "[HotelTaxA.Year]",
+                "filter": {
+                    "explicit": true,
+                    "members": [
+                        "2021"
+                    ],
+                    "multiSelection": false
+                },
+                "isDashboardFilter": true,
+                "title": "Year"
+            }
+        }
+    ]
+}
