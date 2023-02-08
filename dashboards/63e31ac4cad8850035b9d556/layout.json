@@ -17,10 +17,10 @@
                                         "widgetid": "63e31ac4cad8850035b9d55c"
                                     }
                                 ],
-                                "index": 1,
-                                "pxlWidth": 606.359,
+                                "index": 0,
+                                "pxlWidth": 800.438,
                                 "stretchable": false,
-                                "width": 36.266094420600865
+                                "width": 42.039800995024876
                             },
                             {
                                 "elements": [
@@ -34,10 +34,10 @@
                                         "widgetid": "63e31ac4cad8850035b9d55a"
                                     }
                                 ],
-                                "index": 2,
-                                "pxlWidth": 836,
+                                "index": 1,
+                                "pxlWidth": 1103.55,
                                 "stretchable": false,
-                                "width": 50
+                                "width": 57.960199004975124
                             }
                         ]
                     },
@@ -56,7 +56,7 @@
                                     }
                                 ],
                                 "index": 0,
-                                "pxlWidth": 418,
+                                "pxlWidth": 476,
                                 "stretchable": false,
                                 "width": 25
                             },
@@ -73,24 +73,7 @@
                                     }
                                 ],
                                 "index": 1,
-                                "pxlWidth": 418,
-                                "stretchable": false,
-                                "width": 25
-                            },
-                            {
-                                "elements": [
-                                    {
-                                        "defaultWidth": 512,
-                                        "height": "180px",
-                                        "maxHeight": 1028,
-                                        "maxWidth": 1028,
-                                        "minHeight": 64,
-                                        "minWidth": 48,
-                                        "widgetid": "63e31ac4cad8850035b9d557"
-                                    }
-                                ],
-                                "index": 2,
-                                "pxlWidth": 418,
+                                "pxlWidth": 476,
                                 "stretchable": false,
                                 "width": 25
                             },
@@ -106,8 +89,25 @@
                                         "widgetid": "63e31ac4cad8850035b9d559"
                                     }
                                 ],
+                                "index": 2,
+                                "pxlWidth": 476,
+                                "stretchable": false,
+                                "width": 25
+                            },
+                            {
+                                "elements": [
+                                    {
+                                        "defaultWidth": 512,
+                                        "height": "180px",
+                                        "maxHeight": 1028,
+                                        "maxWidth": 1028,
+                                        "minHeight": 64,
+                                        "minWidth": 48,
+                                        "widgetid": "63e31ac4cad8850035b9d557"
+                                    }
+                                ],
                                 "index": 3,
-                                "pxlWidth": 418,
+                                "pxlWidth": 476,
                                 "stretchable": false,
                                 "width": 25
                             }
@@ -128,7 +128,7 @@
                                     }
                                 ],
                                 "index": 0,
-                                "pxlWidth": 557.328,
+                                "pxlWidth": 634.656,
                                 "stretchable": false,
                                 "width": 33.333333333333336
                             },
@@ -145,7 +145,7 @@
                                     }
                                 ],
                                 "index": 1,
-                                "pxlWidth": 557.328,
+                                "pxlWidth": 634.656,
                                 "stretchable": false,
                                 "width": 33.333333333333336
                             },
@@ -162,7 +162,7 @@
                                     }
                                 ],
                                 "index": 2,
-                                "pxlWidth": 557.328,
+                                "pxlWidth": 634.656,
                                 "stretchable": false,
                                 "width": 33.333333333333336
                             }
@@ -170,20 +170,11 @@
                     }
                 ],
                 "index": 0,
-                "pxlWidth": 1672,
+                "pxlWidth": 1904,
                 "width": 100
             }
         ],
         "container": {
-            "sizzle1675459403914": {
-                "undefined": {
-                    "parentNode": [
-                        154.24565527670813,
-                        27,
-                        true
-                    ]
-                }
-            }
         },
         "instanceid": "FC2E8-03DB-E1",
         "type": "columnar"
