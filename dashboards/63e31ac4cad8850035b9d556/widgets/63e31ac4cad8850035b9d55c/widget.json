@@ -49,7 +49,7 @@
     "style": {
         "content": {
             "bgColor": "#0a8287",
-            "html": "<font color=\"#ffffff\" size=\"5\"><b>HOTEL REAL ESTATE TAX</b></font>",
+            "html": "<font size=\"5\" color=\"#ffffff\"><b>HOTEL REAL ESTATE TAX</b></font>",
             "textAlign": "left",
             "vAlign": "valign-middle"
         }

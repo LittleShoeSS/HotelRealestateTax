@@ -1,0 +1,419 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "continuousDates": false,
+    "dashboardid": "63e31ac4cad8850035b9d556",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aRealestateIAAaTax",
+        "fullname": "LocalHost/Realestate Tax",
+        "id": "aLOCALHOST_aREALESTATEIAAaTAX",
+        "title": "Realestate Tax"
+    },
+    "desc": null,
+    "drillToDashboardConfig": {
+        "dashboardIds": [
+        ],
+        "displayDashboardsPane": true,
+        "displayFilterPane": true,
+        "displayHeaderRow": true,
+        "displayToolbarRow": true,
+        "drillToDashboardByName": false,
+        "drillToDashboardMenuCaption": "Jump to dashboard",
+        "drillToDashboardNavigateType": 1,
+        "drillToDashboardNavigateTypeCharts": 1,
+        "drillToDashboardNavigateTypeOthers": 3,
+        "drillToDashboardNavigateTypePivot": 2,
+        "drillToDashboardRightMenuCaption": "Jump to ",
+        "drilledDashboardDisplayType": 2,
+        "drilledDashboardPrefix": "_drill",
+        "drilledDashboardsFolderPrefix": "",
+        "excludeFilterDims": [
+        ],
+        "forceZeroInsteadNull": false,
+        "hideDrilledDashboards": true,
+        "hideSharedDashboardsForNonOwner": true,
+        "includeFilterDims": [
+        ],
+        "mergeTargetDashboardFilters": false,
+        "modalWindowResize": false,
+        "resetDashFiltersAfterJTD": false,
+        "sameCubeRestriction": true,
+        "sendPieChartMeasureFiltersOnClick": true,
+        "showFolderNameOnMenuSelection": false,
+        "showJTDIcon": true,
+        "volatile": false
+    },
+    "hasExcessiveSeries": false,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "format": {
+                            "continuous": false
+                        },
+                        "instanceid": "E3350-AD1E-C5",
+                        "jaql": {
+                            "column": "Name",
+                            "datatype": "text",
+                            "dim": "[HotelTax.Name]",
+                            "merged": true,
+                            "table": "HotelTax",
+                            "title": "Name"
+                        }
+                    }
+                ],
+                "name": "categories"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "color": {
+                                "color": "#00cee6",
+                                "type": "color"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "0FA8B-8557-D0",
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "Interest",
+                            "datatype": "numeric",
+                            "dim": "[HotelTax.Interest]",
+                            "sort": "desc",
+                            "table": "HotelTax",
+                            "title": "Total Interest"
+                        }
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                ],
+                "name": "break by"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "924CE-5CFA-A8",
+                        "jaql": {
+                            "agg": "sum",
+                            "collapsed": false,
+                            "column": "Interest",
+                            "datasource": {
+                                "address": "LocalHost",
+                                "database": "aRealestateIAAaTax",
+                                "fullname": "LocalHost/Realestate Tax",
+                                "id": "aLOCALHOST_aREALESTATEIAAaTAX",
+                                "title": "Realestate Tax"
+                            },
+                            "datatype": "numeric",
+                            "dim": "[HotelTax.Interest]",
+                            "dimension": "[HotelTax.Name]",
+                            "filter": {
+                                "fromNotEqual": 0,
+                                "isBetween": false
+                            },
+                            "firstday": "mon",
+                            "locale": "en-us",
+                            "sort": "desc",
+                            "table": "HotelTax",
+                            "title": "Total Interest"
+                        }
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "nullAsZero": false,
+    "oid": "63e31d85cad8850035b9d5a2",
+    "options": {
+        "aiFeatures": [
+            {
+                "actions": {
+                },
+                "description": "Provide information about your data",
+                "id": "summary_statistics_1569425202576",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Summary Statistics",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "refer to the percentage change of a specific variable within a specific time period and given a certain context",
+                "id": "growth_rate_1572222323562",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Growth Rates",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Roughly 80% of the effects come from 20% of the causes",
+                "id": "pareto_1569481451806",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Pareto",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "perform two tailed t-test",
+                "id": "two-tailed_test_1574241584650",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Two-Tailed Test",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Grouping a set of objects in such a way that objects in the same group are more similar to each other than to those in other groups",
+                "id": "cluster_1570673124179",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Clustering",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Another way to show distributions",
+                "id": "percentile_curves_1574252861643",
+                "isCustomModel": true,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Percentile Curves",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Outlier data points detections",
+                "id": "anomaly",
+                "isCustomModel": false,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Anomaly",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Predict the future values of a 2-var-TS, one of which is the target and the\n                    second is explaining variable.\n                    Provide non-symmetric confidence-interval for the above predictions.\n                    Var-Dependence (Score) - the strength of the influence of the explaining\n                    variable on the target one.\n                    XAI (model weights etc)",
+                "id": "forecast",
+                "isCustomModel": false,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "What-If Analysis",
+                "options": {
+                    "hasTargetVar": true,
+                    "targetVar": {
+                        "options": [
+                            "Total Interest"
+                        ],
+                        "sectionTitle": "Target Value",
+                        "targetVarPaneActive": false,
+                        "value": "Total Interest"
+                    }
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Locally (using before and after time series points) estimating the mean of the time series",
+                "id": "local_estimates",
+                "isCustomModel": false,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Local Estimate",
+                "options": {
+                }
+            },
+            {
+                "actions": {
+                },
+                "description": "Detect (if exists) Trend-Break-Points and connect those with a trend line",
+                "id": "trend",
+                "isCustomModel": false,
+                "isEnabled": false,
+                "isPin": false,
+                "name": "Trend",
+                "options": {
+                }
+            }
+        ],
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "drillToAnywhere": true,
+        "previousScrollerLocation": {
+            "max": null,
+            "min": null
+        },
+        "selector": true,
+        "triggersDomready": true
+    },
+    "prevSortObjects": [
+    ],
+    "realTimeRefreshing": false,
+    "style": {
+        "dataLimits": {
+            "categoriesCapacity": 100000,
+            "seriesCapacity": 50
+        },
+        "legend": {
+            "enabled": true,
+            "position": "bottom"
+        },
+        "lineWidth": {
+            "width": "bold"
+        },
+        "markers": {
+            "enabled": false,
+            "fill": "filled",
+            "size": "small"
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "name",
+                    "plural": "Name",
+                    "singular": "Name",
+                    "title": "Name"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "navigator": {
+            "enabled": true
+        },
+        "pv": "penalty history",
+        "seriesLabels": {
+            "enabled": false,
+            "labels": {
+                "enabled": false,
+                "stacked": false,
+                "stackedPercentage": false,
+                "types": {
+                    "count": false,
+                    "relative": false
+                }
+            },
+            "rotation": 0
+        },
+        "xAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "isIntervalEnabled": false,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "ticks": true,
+            "title": {
+                "enabled": false
+            },
+            "x2Title": {
+                "enabled": false
+            }
+        },
+        "y2Axis": {
+            "enabled": true,
+            "gridLines": false,
+            "hideMinMax": false,
+            "inactive": true,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        },
+        "yAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "hideMinMax": false,
+            "inactive": false,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        }
+    },
+    "subtype": "bar/classic",
+    "title": "Interest Collected",
+    "type": "chart/bar"
+}
