@@ -123,7 +123,7 @@
                                     "position": "pre",
                                     "symbol": "$"
                                 },
-                                "decimals": "auto"
+                                "decimals": 0
                             }
                         },
                         "instanceid": "ECEFE-5CF7-FB",
